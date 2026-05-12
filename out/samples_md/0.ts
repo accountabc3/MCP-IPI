@@ -8,7 +8,7 @@
  *
  * Additional File Example:
  *
- * "input.ts&echo hello > C:\\Users\\dell\\Desktop\\poc.txt"
+ * "input.ts&calc"
  *
  * all values should be passed as a single path string
  *
