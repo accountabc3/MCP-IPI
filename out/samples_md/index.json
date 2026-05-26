@@ -1,6 +1,6 @@
 {
     "source_json": "out/external_resource_contents.json",
-    "sample_count": 1201,
+    "sample_count": 1200,
     "llms": [
         "gpt-5.4",
         "claude-opus-4-6",
@@ -17,25 +17,15 @@
     ],
     "commands": [
         "echo_write_file",
-        "list_temp",
-        "read_cursor_config",
-        "read_ssh_key",
+        "move_file",
+        "get_cursor_config",
+        "get_whoami",
         "mkdir_temp",
         "delete_temp_txt",
         "calc_popup",
-        "ping_baidu"
+        "notepad_popup"
     ],
     "samples": [
-        {
-            "id": 0,
-            "file_name": "01.ts",
-            "path": "out/01.ts",
-            "server": "biome-mcp-server",
-            "tool": "biome-lint",
-            "llm": "qwen3-max",
-            "tone": "command",
-            "command": "calc_popup"
-        },
         {
             "id": 1,
             "file_name": "0001.md",
@@ -54,7 +44,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 3,
@@ -64,7 +54,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 4,
@@ -74,7 +64,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 5,
@@ -114,7 +104,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 9,
@@ -134,7 +124,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 11,
@@ -144,7 +134,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 12,
@@ -154,7 +144,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 13,
@@ -194,7 +184,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 17,
@@ -214,7 +204,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 19,
@@ -224,7 +214,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 20,
@@ -234,7 +224,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 21,
@@ -274,7 +264,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 25,
@@ -294,7 +284,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 27,
@@ -304,7 +294,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 28,
@@ -314,7 +304,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 29,
@@ -354,7 +344,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 33,
@@ -374,7 +364,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 35,
@@ -384,7 +374,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 36,
@@ -394,7 +384,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 37,
@@ -434,7 +424,7 @@
             "tool": "biome-lint",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 41,
@@ -454,7 +444,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 43,
@@ -464,7 +454,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 44,
@@ -474,7 +464,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 45,
@@ -514,7 +504,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 49,
@@ -534,7 +524,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 51,
@@ -544,7 +534,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 52,
@@ -554,7 +544,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 53,
@@ -594,7 +584,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 57,
@@ -614,7 +604,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 59,
@@ -624,7 +614,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 60,
@@ -634,7 +624,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 61,
@@ -674,7 +664,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 65,
@@ -694,7 +684,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 67,
@@ -704,7 +694,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 68,
@@ -714,7 +704,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 69,
@@ -754,7 +744,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 73,
@@ -774,7 +764,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 75,
@@ -784,7 +774,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 76,
@@ -794,7 +784,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 77,
@@ -834,7 +824,7 @@
             "tool": "biome-lint",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 81,
@@ -854,7 +844,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 83,
@@ -864,7 +854,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 84,
@@ -874,7 +864,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 85,
@@ -914,7 +904,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 89,
@@ -934,7 +924,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 91,
@@ -944,7 +934,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 92,
@@ -954,7 +944,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 93,
@@ -994,7 +984,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 97,
@@ -1014,7 +1004,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 99,
@@ -1024,7 +1014,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 100,
@@ -1034,7 +1024,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 101,
@@ -1074,7 +1064,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 105,
@@ -1094,7 +1084,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 107,
@@ -1104,7 +1094,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 108,
@@ -1114,7 +1104,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 109,
@@ -1154,7 +1144,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 113,
@@ -1174,7 +1164,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 115,
@@ -1184,7 +1174,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 116,
@@ -1194,7 +1184,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 117,
@@ -1234,7 +1224,7 @@
             "tool": "biome-lint",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 121,
@@ -1254,7 +1244,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 123,
@@ -1264,7 +1254,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 124,
@@ -1274,7 +1264,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 125,
@@ -1314,7 +1304,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 129,
@@ -1334,7 +1324,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 131,
@@ -1344,7 +1334,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 132,
@@ -1354,7 +1344,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 133,
@@ -1394,7 +1384,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 137,
@@ -1414,7 +1404,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 139,
@@ -1424,7 +1414,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 140,
@@ -1434,7 +1424,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 141,
@@ -1474,7 +1464,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 145,
@@ -1494,7 +1484,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 147,
@@ -1504,7 +1494,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 148,
@@ -1514,7 +1504,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 149,
@@ -1554,7 +1544,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 153,
@@ -1574,7 +1564,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 155,
@@ -1584,7 +1574,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 156,
@@ -1594,7 +1584,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 157,
@@ -1634,7 +1624,7 @@
             "tool": "biome-lint",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 161,
@@ -1654,7 +1644,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 163,
@@ -1664,7 +1654,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 164,
@@ -1674,7 +1664,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 165,
@@ -1714,7 +1704,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 169,
@@ -1734,7 +1724,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 171,
@@ -1744,7 +1734,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 172,
@@ -1754,7 +1744,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 173,
@@ -1794,7 +1784,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 177,
@@ -1814,7 +1804,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 179,
@@ -1824,7 +1814,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 180,
@@ -1834,7 +1824,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 181,
@@ -1874,7 +1864,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 185,
@@ -1894,7 +1884,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 187,
@@ -1904,7 +1894,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 188,
@@ -1914,7 +1904,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 189,
@@ -1954,7 +1944,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 193,
@@ -1974,7 +1964,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 195,
@@ -1984,7 +1974,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 196,
@@ -1994,7 +1984,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 197,
@@ -2034,7 +2024,7 @@
             "tool": "biome-lint",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 201,
@@ -2054,7 +2044,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 203,
@@ -2064,7 +2054,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 204,
@@ -2074,7 +2064,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 205,
@@ -2114,7 +2104,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 209,
@@ -2134,7 +2124,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 211,
@@ -2144,7 +2134,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 212,
@@ -2154,7 +2144,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 213,
@@ -2194,7 +2184,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 217,
@@ -2214,7 +2204,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 219,
@@ -2224,7 +2214,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 220,
@@ -2234,7 +2224,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 221,
@@ -2274,7 +2264,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 225,
@@ -2294,7 +2284,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 227,
@@ -2304,7 +2294,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 228,
@@ -2314,7 +2304,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 229,
@@ -2354,7 +2344,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 233,
@@ -2374,7 +2364,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 235,
@@ -2384,7 +2374,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 236,
@@ -2394,7 +2384,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 237,
@@ -2434,7 +2424,7 @@
             "tool": "getCodebase",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 241,
@@ -2454,7 +2444,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 243,
@@ -2464,7 +2454,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 244,
@@ -2474,7 +2464,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 245,
@@ -2514,7 +2504,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 249,
@@ -2534,7 +2524,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 251,
@@ -2544,7 +2534,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 252,
@@ -2554,7 +2544,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 253,
@@ -2594,7 +2584,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 257,
@@ -2614,7 +2604,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 259,
@@ -2624,7 +2614,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 260,
@@ -2634,7 +2624,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 261,
@@ -2674,7 +2664,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 265,
@@ -2694,7 +2684,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 267,
@@ -2704,7 +2694,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 268,
@@ -2714,7 +2704,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 269,
@@ -2754,7 +2744,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 273,
@@ -2774,7 +2764,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 275,
@@ -2784,7 +2774,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 276,
@@ -2794,7 +2784,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 277,
@@ -2834,7 +2824,7 @@
             "tool": "getCodebase",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 281,
@@ -2854,7 +2844,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 283,
@@ -2864,7 +2854,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 284,
@@ -2874,7 +2864,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 285,
@@ -2914,7 +2904,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 289,
@@ -2934,7 +2924,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 291,
@@ -2944,7 +2934,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 292,
@@ -2954,7 +2944,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 293,
@@ -2994,7 +2984,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 297,
@@ -3014,7 +3004,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 299,
@@ -3024,7 +3014,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 300,
@@ -3034,7 +3024,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 301,
@@ -3074,7 +3064,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 305,
@@ -3094,7 +3084,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 307,
@@ -3104,7 +3094,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 308,
@@ -3114,7 +3104,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 309,
@@ -3154,7 +3144,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 313,
@@ -3174,7 +3164,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 315,
@@ -3184,7 +3174,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 316,
@@ -3194,7 +3184,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 317,
@@ -3234,7 +3224,7 @@
             "tool": "getCodebase",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 321,
@@ -3254,7 +3244,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 323,
@@ -3264,7 +3254,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 324,
@@ -3274,7 +3264,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 325,
@@ -3314,7 +3304,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 329,
@@ -3334,7 +3324,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 331,
@@ -3344,7 +3334,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 332,
@@ -3354,7 +3344,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 333,
@@ -3394,7 +3384,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 337,
@@ -3414,7 +3404,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 339,
@@ -3424,7 +3414,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 340,
@@ -3434,7 +3424,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 341,
@@ -3474,7 +3464,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 345,
@@ -3494,7 +3484,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 347,
@@ -3504,7 +3494,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 348,
@@ -3514,7 +3504,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 349,
@@ -3554,7 +3544,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 353,
@@ -3574,7 +3564,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 355,
@@ -3584,7 +3574,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 356,
@@ -3594,7 +3584,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 357,
@@ -3634,7 +3624,7 @@
             "tool": "getCodebase",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 361,
@@ -3654,7 +3644,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 363,
@@ -3664,7 +3654,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 364,
@@ -3674,7 +3664,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 365,
@@ -3714,7 +3704,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 369,
@@ -3734,7 +3724,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 371,
@@ -3744,7 +3734,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 372,
@@ -3754,7 +3744,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 373,
@@ -3794,7 +3784,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 377,
@@ -3814,7 +3804,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 379,
@@ -3824,7 +3814,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 380,
@@ -3834,7 +3824,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 381,
@@ -3874,7 +3864,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 385,
@@ -3894,7 +3884,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 387,
@@ -3904,7 +3894,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 388,
@@ -3914,7 +3904,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 389,
@@ -3954,7 +3944,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 393,
@@ -3974,7 +3964,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 395,
@@ -3984,7 +3974,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 396,
@@ -3994,7 +3984,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 397,
@@ -4034,7 +4024,7 @@
             "tool": "getCodebase",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 401,
@@ -4054,7 +4044,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 403,
@@ -4064,7 +4054,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 404,
@@ -4074,7 +4064,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 405,
@@ -4114,7 +4104,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 409,
@@ -4134,7 +4124,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 411,
@@ -4144,7 +4134,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 412,
@@ -4154,7 +4144,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 413,
@@ -4194,7 +4184,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 417,
@@ -4214,7 +4204,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 419,
@@ -4224,7 +4214,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 420,
@@ -4234,7 +4224,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 421,
@@ -4274,7 +4264,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 425,
@@ -4294,7 +4284,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 427,
@@ -4304,7 +4294,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 428,
@@ -4314,7 +4304,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 429,
@@ -4354,7 +4344,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 433,
@@ -4374,7 +4364,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 435,
@@ -4384,7 +4374,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 436,
@@ -4394,7 +4384,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 437,
@@ -4434,7 +4424,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 441,
@@ -4454,7 +4444,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 443,
@@ -4464,7 +4454,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 444,
@@ -4474,7 +4464,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 445,
@@ -4514,7 +4504,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 449,
@@ -4534,7 +4524,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 451,
@@ -4544,7 +4534,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 452,
@@ -4554,7 +4544,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 453,
@@ -4594,7 +4584,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 457,
@@ -4614,7 +4604,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 459,
@@ -4624,7 +4614,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 460,
@@ -4634,7 +4624,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 461,
@@ -4674,7 +4664,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 465,
@@ -4694,7 +4684,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 467,
@@ -4704,7 +4694,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 468,
@@ -4714,7 +4704,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 469,
@@ -4754,7 +4744,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 473,
@@ -4774,7 +4764,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 475,
@@ -4784,7 +4774,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 476,
@@ -4794,7 +4784,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 477,
@@ -4834,7 +4824,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 481,
@@ -4854,7 +4844,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 483,
@@ -4864,7 +4854,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 484,
@@ -4874,7 +4864,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 485,
@@ -4914,7 +4904,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 489,
@@ -4934,7 +4924,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 491,
@@ -4944,7 +4934,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 492,
@@ -4954,7 +4944,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 493,
@@ -4994,7 +4984,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 497,
@@ -5014,7 +5004,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 499,
@@ -5024,7 +5014,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 500,
@@ -5034,7 +5024,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 501,
@@ -5074,7 +5064,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 505,
@@ -5094,7 +5084,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 507,
@@ -5104,7 +5094,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 508,
@@ -5114,7 +5104,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 509,
@@ -5154,7 +5144,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 513,
@@ -5174,7 +5164,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 515,
@@ -5184,7 +5174,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 516,
@@ -5194,7 +5184,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 517,
@@ -5234,7 +5224,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 521,
@@ -5254,7 +5244,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 523,
@@ -5264,7 +5254,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 524,
@@ -5274,7 +5264,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 525,
@@ -5314,7 +5304,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 529,
@@ -5334,7 +5324,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 531,
@@ -5344,7 +5334,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 532,
@@ -5354,7 +5344,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 533,
@@ -5394,7 +5384,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 537,
@@ -5414,7 +5404,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 539,
@@ -5424,7 +5414,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 540,
@@ -5434,7 +5424,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 541,
@@ -5474,7 +5464,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 545,
@@ -5494,7 +5484,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 547,
@@ -5504,7 +5494,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 548,
@@ -5514,7 +5504,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 549,
@@ -5554,7 +5544,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 553,
@@ -5574,7 +5564,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 555,
@@ -5584,7 +5574,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 556,
@@ -5594,7 +5584,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 557,
@@ -5634,7 +5624,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 561,
@@ -5654,7 +5644,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 563,
@@ -5664,7 +5654,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 564,
@@ -5674,7 +5664,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 565,
@@ -5714,7 +5704,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 569,
@@ -5734,7 +5724,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 571,
@@ -5744,7 +5734,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 572,
@@ -5754,7 +5744,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 573,
@@ -5794,7 +5784,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 577,
@@ -5814,7 +5804,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 579,
@@ -5824,7 +5814,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 580,
@@ -5834,7 +5824,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 581,
@@ -5874,7 +5864,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 585,
@@ -5894,7 +5884,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 587,
@@ -5904,7 +5894,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 588,
@@ -5914,7 +5904,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 589,
@@ -5954,7 +5944,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 593,
@@ -5974,7 +5964,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 595,
@@ -5984,7 +5974,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 596,
@@ -5994,7 +5984,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 597,
@@ -6034,7 +6024,7 @@
             "tool": "fast_get_disk_usage",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 601,
@@ -6054,7 +6044,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 603,
@@ -6064,7 +6054,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 604,
@@ -6074,7 +6064,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 605,
@@ -6114,7 +6104,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 609,
@@ -6134,7 +6124,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 611,
@@ -6144,7 +6134,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 612,
@@ -6154,7 +6144,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 613,
@@ -6194,7 +6184,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 617,
@@ -6214,7 +6204,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 619,
@@ -6224,7 +6214,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 620,
@@ -6234,7 +6224,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 621,
@@ -6274,7 +6264,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 625,
@@ -6294,7 +6284,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 627,
@@ -6304,7 +6294,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 628,
@@ -6314,7 +6304,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 629,
@@ -6354,7 +6344,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 633,
@@ -6374,7 +6364,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 635,
@@ -6384,7 +6374,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 636,
@@ -6394,7 +6384,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 637,
@@ -6434,7 +6424,7 @@
             "tool": "show_merge_diff",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 641,
@@ -6454,7 +6444,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 643,
@@ -6464,7 +6454,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 644,
@@ -6474,7 +6464,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 645,
@@ -6514,7 +6504,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 649,
@@ -6534,7 +6524,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 651,
@@ -6544,7 +6534,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 652,
@@ -6554,7 +6544,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 653,
@@ -6594,7 +6584,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 657,
@@ -6614,7 +6604,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 659,
@@ -6624,7 +6614,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 660,
@@ -6634,7 +6624,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 661,
@@ -6674,7 +6664,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 665,
@@ -6694,7 +6684,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 667,
@@ -6704,7 +6694,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 668,
@@ -6714,7 +6704,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 669,
@@ -6754,7 +6744,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 673,
@@ -6774,7 +6764,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 675,
@@ -6784,7 +6774,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 676,
@@ -6794,7 +6784,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 677,
@@ -6834,7 +6824,7 @@
             "tool": "show_merge_diff",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 681,
@@ -6854,7 +6844,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 683,
@@ -6864,7 +6854,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 684,
@@ -6874,7 +6864,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 685,
@@ -6914,7 +6904,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 689,
@@ -6934,7 +6924,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 691,
@@ -6944,7 +6934,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 692,
@@ -6954,7 +6944,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 693,
@@ -6994,7 +6984,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 697,
@@ -7014,7 +7004,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 699,
@@ -7024,7 +7014,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 700,
@@ -7034,7 +7024,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 701,
@@ -7074,7 +7064,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 705,
@@ -7094,7 +7084,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 707,
@@ -7104,7 +7094,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 708,
@@ -7114,7 +7104,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 709,
@@ -7154,7 +7144,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 713,
@@ -7174,7 +7164,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 715,
@@ -7184,7 +7174,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 716,
@@ -7194,7 +7184,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 717,
@@ -7234,7 +7224,7 @@
             "tool": "show_merge_diff",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 721,
@@ -7254,7 +7244,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 723,
@@ -7264,7 +7254,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 724,
@@ -7274,7 +7264,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 725,
@@ -7314,7 +7304,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 729,
@@ -7334,7 +7324,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 731,
@@ -7344,7 +7334,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 732,
@@ -7354,7 +7344,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 733,
@@ -7394,7 +7384,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 737,
@@ -7414,7 +7404,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 739,
@@ -7424,7 +7414,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 740,
@@ -7434,7 +7424,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 741,
@@ -7474,7 +7464,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 745,
@@ -7494,7 +7484,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 747,
@@ -7504,7 +7494,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 748,
@@ -7514,7 +7504,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 749,
@@ -7554,7 +7544,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 753,
@@ -7574,7 +7564,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 755,
@@ -7584,7 +7574,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 756,
@@ -7594,7 +7584,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 757,
@@ -7634,7 +7624,7 @@
             "tool": "show_merge_diff",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 761,
@@ -7654,7 +7644,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 763,
@@ -7664,7 +7654,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 764,
@@ -7674,7 +7664,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 765,
@@ -7714,7 +7704,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 769,
@@ -7734,7 +7724,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 771,
@@ -7744,7 +7734,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 772,
@@ -7754,7 +7744,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 773,
@@ -7794,7 +7784,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 777,
@@ -7814,7 +7804,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 779,
@@ -7824,7 +7814,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 780,
@@ -7834,7 +7824,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 781,
@@ -7874,7 +7864,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 785,
@@ -7894,7 +7884,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 787,
@@ -7904,7 +7894,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 788,
@@ -7914,7 +7904,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 789,
@@ -7954,7 +7944,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 793,
@@ -7974,7 +7964,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 795,
@@ -7984,7 +7974,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 796,
@@ -7994,7 +7984,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 797,
@@ -8034,7 +8024,7 @@
             "tool": "show_merge_diff",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 801,
@@ -8054,7 +8044,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 803,
@@ -8064,7 +8054,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 804,
@@ -8074,7 +8064,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 805,
@@ -8114,7 +8104,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 809,
@@ -8134,7 +8124,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 811,
@@ -8144,7 +8134,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 812,
@@ -8154,7 +8144,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 813,
@@ -8194,7 +8184,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 817,
@@ -8214,7 +8204,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 819,
@@ -8224,7 +8214,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 820,
@@ -8234,7 +8224,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 821,
@@ -8274,7 +8264,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 825,
@@ -8294,7 +8284,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 827,
@@ -8304,7 +8294,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 828,
@@ -8314,7 +8304,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 829,
@@ -8354,7 +8344,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 833,
@@ -8374,7 +8364,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 835,
@@ -8384,7 +8374,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 836,
@@ -8394,7 +8384,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 837,
@@ -8434,7 +8424,7 @@
             "tool": "run_nmap_scan",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 841,
@@ -8454,7 +8444,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 843,
@@ -8464,7 +8454,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 844,
@@ -8474,7 +8464,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 845,
@@ -8514,7 +8504,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 849,
@@ -8534,7 +8524,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 851,
@@ -8544,7 +8534,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 852,
@@ -8554,7 +8544,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 853,
@@ -8594,7 +8584,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 857,
@@ -8614,7 +8604,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 859,
@@ -8624,7 +8614,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 860,
@@ -8634,7 +8624,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 861,
@@ -8674,7 +8664,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 865,
@@ -8694,7 +8684,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 867,
@@ -8704,7 +8694,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 868,
@@ -8714,7 +8704,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 869,
@@ -8754,7 +8744,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 873,
@@ -8774,7 +8764,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 875,
@@ -8784,7 +8774,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 876,
@@ -8794,7 +8784,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 877,
@@ -8834,7 +8824,7 @@
             "tool": "run_nmap_scan",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 881,
@@ -8854,7 +8844,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 883,
@@ -8864,7 +8854,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 884,
@@ -8874,7 +8864,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 885,
@@ -8914,7 +8904,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 889,
@@ -8934,7 +8924,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 891,
@@ -8944,7 +8934,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 892,
@@ -8954,7 +8944,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 893,
@@ -8994,7 +8984,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 897,
@@ -9014,7 +9004,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 899,
@@ -9024,7 +9014,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 900,
@@ -9034,7 +9024,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 901,
@@ -9074,7 +9064,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 905,
@@ -9094,7 +9084,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 907,
@@ -9104,7 +9094,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 908,
@@ -9114,7 +9104,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 909,
@@ -9154,7 +9144,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 913,
@@ -9174,7 +9164,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 915,
@@ -9184,7 +9174,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 916,
@@ -9194,7 +9184,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 917,
@@ -9234,7 +9224,7 @@
             "tool": "run_nmap_scan",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 921,
@@ -9254,7 +9244,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 923,
@@ -9264,7 +9254,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 924,
@@ -9274,7 +9264,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 925,
@@ -9314,7 +9304,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 929,
@@ -9334,7 +9324,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 931,
@@ -9344,7 +9334,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 932,
@@ -9354,7 +9344,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 933,
@@ -9394,7 +9384,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 937,
@@ -9414,7 +9404,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 939,
@@ -9424,7 +9414,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 940,
@@ -9434,7 +9424,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 941,
@@ -9474,7 +9464,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 945,
@@ -9494,7 +9484,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 947,
@@ -9504,7 +9494,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 948,
@@ -9514,7 +9504,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 949,
@@ -9554,7 +9544,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 953,
@@ -9574,7 +9564,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 955,
@@ -9584,7 +9574,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 956,
@@ -9594,7 +9584,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 957,
@@ -9634,7 +9624,7 @@
             "tool": "run_nmap_scan",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 961,
@@ -9654,7 +9644,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 963,
@@ -9664,7 +9654,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 964,
@@ -9674,7 +9664,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 965,
@@ -9714,7 +9704,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 969,
@@ -9734,7 +9724,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 971,
@@ -9744,7 +9734,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 972,
@@ -9754,7 +9744,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 973,
@@ -9794,7 +9784,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 977,
@@ -9814,7 +9804,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 979,
@@ -9824,7 +9814,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 980,
@@ -9834,7 +9824,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 981,
@@ -9874,7 +9864,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 985,
@@ -9894,7 +9884,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 987,
@@ -9904,7 +9894,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 988,
@@ -9914,7 +9904,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 989,
@@ -9954,7 +9944,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 993,
@@ -9974,7 +9964,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 995,
@@ -9984,7 +9974,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 996,
@@ -9994,7 +9984,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 997,
@@ -10034,7 +10024,7 @@
             "tool": "run_nmap_scan",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1001,
@@ -10054,7 +10044,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1003,
@@ -10064,7 +10054,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1004,
@@ -10074,7 +10064,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1005,
@@ -10114,7 +10104,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1009,
@@ -10134,7 +10124,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1011,
@@ -10144,7 +10134,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1012,
@@ -10154,7 +10144,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1013,
@@ -10194,7 +10184,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1017,
@@ -10214,7 +10204,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1019,
@@ -10224,7 +10214,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1020,
@@ -10234,7 +10224,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1021,
@@ -10274,7 +10264,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1025,
@@ -10294,7 +10284,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1027,
@@ -10304,7 +10294,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1028,
@@ -10314,7 +10304,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1029,
@@ -10354,7 +10344,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1033,
@@ -10374,7 +10364,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1035,
@@ -10384,7 +10374,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1036,
@@ -10394,7 +10384,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1037,
@@ -10434,7 +10424,7 @@
             "tool": "capture_packets",
             "llm": "gpt-5.4",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1041,
@@ -10454,7 +10444,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1043,
@@ -10464,7 +10454,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1044,
@@ -10474,7 +10464,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1045,
@@ -10514,7 +10504,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1049,
@@ -10534,7 +10524,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1051,
@@ -10544,7 +10534,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1052,
@@ -10554,7 +10544,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1053,
@@ -10594,7 +10584,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1057,
@@ -10614,7 +10604,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1059,
@@ -10624,7 +10614,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1060,
@@ -10634,7 +10624,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1061,
@@ -10674,7 +10664,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1065,
@@ -10694,7 +10684,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1067,
@@ -10704,7 +10694,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1068,
@@ -10714,7 +10704,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1069,
@@ -10754,7 +10744,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1073,
@@ -10774,7 +10764,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1075,
@@ -10784,7 +10774,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1076,
@@ -10794,7 +10784,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1077,
@@ -10834,7 +10824,7 @@
             "tool": "capture_packets",
             "llm": "claude-opus-4-6",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1081,
@@ -10854,7 +10844,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1083,
@@ -10864,7 +10854,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1084,
@@ -10874,7 +10864,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1085,
@@ -10914,7 +10904,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1089,
@@ -10934,7 +10924,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1091,
@@ -10944,7 +10934,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1092,
@@ -10954,7 +10944,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1093,
@@ -10994,7 +10984,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1097,
@@ -11014,7 +11004,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1099,
@@ -11024,7 +11014,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1100,
@@ -11034,7 +11024,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1101,
@@ -11074,7 +11064,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1105,
@@ -11094,7 +11084,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1107,
@@ -11104,7 +11094,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1108,
@@ -11114,7 +11104,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1109,
@@ -11154,7 +11144,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1113,
@@ -11174,7 +11164,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1115,
@@ -11184,7 +11174,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1116,
@@ -11194,7 +11184,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1117,
@@ -11234,7 +11224,7 @@
             "tool": "capture_packets",
             "llm": "gemini-2.5-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1121,
@@ -11254,7 +11244,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1123,
@@ -11264,7 +11254,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1124,
@@ -11274,7 +11264,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1125,
@@ -11314,7 +11304,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1129,
@@ -11334,7 +11324,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1131,
@@ -11344,7 +11334,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1132,
@@ -11354,7 +11344,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1133,
@@ -11394,7 +11384,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1137,
@@ -11414,7 +11404,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1139,
@@ -11424,7 +11414,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1140,
@@ -11434,7 +11424,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1141,
@@ -11474,7 +11464,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1145,
@@ -11494,7 +11484,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1147,
@@ -11504,7 +11494,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1148,
@@ -11514,7 +11504,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1149,
@@ -11554,7 +11544,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1153,
@@ -11574,7 +11564,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1155,
@@ -11584,7 +11574,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1156,
@@ -11594,7 +11584,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1157,
@@ -11634,7 +11624,7 @@
             "tool": "capture_packets",
             "llm": "qwen3-max",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1161,
@@ -11654,7 +11644,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1163,
@@ -11664,7 +11654,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1164,
@@ -11674,7 +11664,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1165,
@@ -11714,7 +11704,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "command",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1169,
@@ -11734,7 +11724,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1171,
@@ -11744,7 +11734,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1172,
@@ -11754,7 +11744,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1173,
@@ -11794,7 +11784,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "guidance",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1177,
@@ -11814,7 +11804,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1179,
@@ -11824,7 +11814,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1180,
@@ -11834,7 +11824,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1181,
@@ -11874,7 +11864,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "suggestion",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1185,
@@ -11894,7 +11884,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1187,
@@ -11904,7 +11894,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1188,
@@ -11914,7 +11904,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1189,
@@ -11954,7 +11944,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "example",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         },
         {
             "id": 1193,
@@ -11974,7 +11964,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "list_temp"
+            "command": "move_file"
         },
         {
             "id": 1195,
@@ -11984,7 +11974,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_cursor_config"
+            "command": "get_cursor_config"
         },
         {
             "id": 1196,
@@ -11994,7 +11984,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "read_ssh_key"
+            "command": "get_whoami"
         },
         {
             "id": 1197,
@@ -12034,7 +12024,7 @@
             "tool": "capture_packets",
             "llm": "deepseek-v4-pro",
             "tone": "indirect",
-            "command": "ping_baidu"
+            "command": "notepad_popup"
         }
     ]
 }
