@@ -1,0 +1,58 @@
+{
+  "sample_count": 6,
+  "sample_groups": [
+    {
+      "parent_index": 1,
+      "server": "biome-mcp-server",
+      "tool": "biome-lint",
+      "plan_dimensions": {
+        "G": "Runbook",
+        "A": "A4",
+        "C": "move_file",
+        "S": "S4",
+        "E": "E4",
+        "T": "command",
+        "L": "EN",
+        "R": "MD"
+      },
+      "samples": [
+        {
+          "id": "0001_base",
+          "variant": "base",
+          "file_name": "0001_base.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_base.md"
+        },
+        {
+          "id": "0001_semantic",
+          "variant": "semantic",
+          "file_name": "0001_semantic.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_semantic.md"
+        },
+        {
+          "id": "0001_context",
+          "variant": "context",
+          "file_name": "0001_context.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_context.md"
+        },
+        {
+          "id": "0001_payload",
+          "variant": "payload",
+          "file_name": "0001_payload.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_payload.md"
+        },
+        {
+          "id": "0001_execution",
+          "variant": "execution",
+          "file_name": "0001_execution.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_execution.md"
+        },
+        {
+          "id": "0001_verification",
+          "variant": "verification",
+          "file_name": "0001_verification.md",
+          "path": "opt_ASR/resource_generator/out/samples_md/0001_verification.md"
+        }
+      ]
+    }
+  ]
+}
